@@ -8,7 +8,8 @@ header {
         }
     .main-title{
         font-size: 2em;
-        padding-bottom: 3px;
+        padding-bottom: 0me;
+        margin-bottom: 5PX;
     }
 
 .use a{
@@ -22,6 +23,7 @@ header {
         font-size: 1em;
         padding-top: 0px;
         text-align: center;
+          margin-top: 3PX;
     }
 
 body{
