@@ -14,9 +14,9 @@ header {
 
 .use a{
        align-content: center;
-       text-align: right;
+       text-align: center;
     display: grid;
-    
+       color: white;
     }
 
     .subtitle{
