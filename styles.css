@@ -14,7 +14,7 @@ header {
 
 .use a{
        align-content: center;
-       text-align: center;
+       text-align: right;
     display: grid;
     
     }
