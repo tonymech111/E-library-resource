@@ -1,54 +1,74 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
 
 header {
-    background-color:purple;
-    color: white;
-    padding: 0px;
-    text-align: center;
-    margin-bottom: 5px;
-        }
-    .main-title{
-        font-size: 2em;
-        padding-bottom: 0me;
-        margin-bottom: 5PX;
-    }
-
-.use a{
-       align-content: center;
-       text-align: center;
-    display: grid;
-       color: white;
-    }
-
-    .subtitle{
-        font-size: 1em;
-        padding-top: 0px;
-        text-align: center;
-          margin-top: 3PX;
-    }
-
-body{
-    background-image: url(wallpaper.jpg);
-    color: white;
-    font-size: large;
-    
-   }
-    
-
-    
-
-  
-    
-
-  
-
-   
-
-
-
-
-
-
-
-
-    text-decoration: underline;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
+
+main {
+  padding: 20px;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(100% / 3 - 40px); /* Adjust width for 3 columns */
+  text-align: center;
+}
+
+.course-card h2 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  color: #333;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-card {
+    width: calc(100% / 2 - 20px); /* Adjust width for 2 columns */
+  }
+}
+
+@media (max-width: 480px) {
+  .course-card {
+    width: 100%; /* Single column on small screens */
+  }
+}
+
+
+
+
+
+
+
+    
