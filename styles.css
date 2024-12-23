@@ -14,12 +14,6 @@ header {
   text-align: center;
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
 main {
   padding: 10px;
 }
