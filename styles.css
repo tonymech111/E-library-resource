@@ -1,31 +1,46 @@
-/* styles.css */
+  /* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f5f5f5;
-  
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
+  text-align: center;
+  padding: 20px;
   background-color:white;
-  color:green;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
- 
-
- select {
-  width: 100%;
+  color: green;
+  
 }
 
 
 .logo-container img{
-width: 150px;
-height: 150px;
+  width: 150px;
+  height: 150px;
+}
+select{
+  width: 100%;
+}
 
+
+
+header nav {
+  margin-top: 0px;
+  justify-content: space-between;
+
+} 
+ 
+header nav a {
+  
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+
+header nav a:hover {
+  text-decoration: underline;
 }
 
 .main.title {
@@ -41,17 +56,12 @@ height: 150px;
 
 }
 
-nav.use a {
-  margin: 0 10px;
-  text-decoration: none;
-}
-
+/* Course Container Styles */
 .courses-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
-  width: 90%;
 }
 
 .course-card {
@@ -60,7 +70,8 @@ nav.use a {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: calc(50%-10px);/* Adjust width for 3 columns */
+  width: calc(100% / 2 - 20px); /* Default: 2 cards per row */
+  max-width: 300px;
   text-align: center;
 }
 
@@ -70,37 +81,38 @@ nav.use a {
 }
 
 .course-card p {
-  color: #333;
+  margin-bottom: 15px;
 }
 
+.course-card select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Footer */
 footer {
   background-color: #4CAF50;
   color: white;
-  padding: 10px 0;
   text-align: center;
+  padding: 10px 0;
   margin-top: 20px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .course-card {
-    width: calc(100% / 2 - 20px); /* Adjust width for 2 columns */
-    body{
-      font-size: 14px;
-    }
+      width: calc(100% / 1 - 20px); /* 1 card per row for tablets */
   }
 }
 
 @media (max-width: 480px) {
   .course-card {
-    width: 100%; /* Single column on small screens */
-    flex-direction: column;
+      width: 100%; /* Full width on mobile */
+  }
+
+  header .logo img {
+      max-width: 70px; /* Smaller logo for mobile */
   }
 }
-
-
-
-
-
-
-
