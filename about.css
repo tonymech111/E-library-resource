@@ -1,24 +1,45 @@
+/* General Styles */
 body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-         background-color: #f4f4f4;
-        }
-    
-header {
-        background-color: white;
-        color: white;
-        text-align:center;
-        padding: 50p5x;
-    }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
-  
-
+/* Section Styling */
 section {
+    width: 80%;
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px;
-    background-color: white;
+    background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(103, 5, 5, 0.504);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3 {
+    color: #008000; /* Green */
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Contact Info */
+p strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+        padding: 15px;
+    }
 }
